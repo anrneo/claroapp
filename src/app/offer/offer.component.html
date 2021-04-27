@@ -1,0 +1,6 @@
+<div class="form-group">
+    <h3>Offers list:</h3>
+    <select class="form-control" id="sel1">
+      <option *ngFor="let data of dataset[0]" (click)="idSelected(data.id)">{{data.id}} - {{data.versions[0].name}}</option>
+    </select>
+  </div> 

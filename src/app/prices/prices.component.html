@@ -1,0 +1,16 @@
+<h3>Prices</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pri of prices[0]">
+        <td>{{pri.versions[0].name}}</td>
+        <td>{{pri.versions[0].price.amount | currency}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
